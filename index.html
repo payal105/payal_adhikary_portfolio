@@ -1,453 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payal Adhikary</title>
+    <link rel="stylesheet" href="font-awesome.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <!-- Page Loader Start -->
     <div class="page-loader">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="page-loader-inner">
+            <div class="circle">
+             
+            </div>
+            Loading
+        </div>
     </div>
     <!-- Page Loader End -->
 
-    <!-- Background Circles Start -->
-    <div class="bg-circles">
-        <div class="circle-1"></div>
-        <div class="circle-2"></div>
-        <div class="circle-3"></div>
-        <div class="circle-4"></div>
+<!-- Bg Animation Starts -->
+<div class="bg-animation-effect"></div>
+<!-- Bg Animation Ends -->
+
+<!-- Overlay Effect Start-->
+<div class="overlay-effect">
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+</div>
+<!-- Overlay Effect End-->
+
+<!-- Header  Start-->
+<header class="header">
+    <div class="container">
+        <div class="row flex-end">
+            <button type="button" class="nav-toggler">
+                <span></span>
+            </button>
+            <!-- nav -->
+            <nav class="nav">
+                <div class="nav-inner">
+                    <ul>
+                        <li><a href="#about" class="nav-item link-item">about</a></li>
+                        <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                        <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
-    <!-- Background Circles End -->
+</header>
+<!-- Header  End-->
 
-    <!-- Overlay Start -->
-    <div class="overlay">
-        
-    </div>
-    <!-- Overlay End -->
-
-    <!-- Main Start-->
-    <div class="main hidden">
-
-        <!-- Header Start -->
-        <header class="header">
-            <div class="container">
-                <div class="row flex-end">
-                    <button type="button" class="nav-toggler">
-                        <span></span>
-                    </button>
-                    <nav class="nav">
-                        <div class="nav-inner">
-                            <ul>
-                                <li><a href="#home" class="nav-item link-item">home</a></li>
-                                <li><a href="#about" class="nav-item link-item">about</a></li>
-                                <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
-                                <li><a href="#contact" class="nav-item link-item">contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <!-- Header End -->
-        <!-- Home Section Start -->
-        <section class="home-section align-items-center" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="home-text">
-                        <p>Hello, I'm</p>
-                        <h1>payal adhikary</h1>
-                        <h2>fullstack developer</h2>
-                        <a href="#about" class="btn link-item">more about me</a>
-                        <a href="#portfolio" class="btn link-item">portfolio</a>
-                    </div>
-                    <div class="home-img">
-                        <div class="img-box">
-                            <img src="img/home.png" alt="profile image">
-                        </div>
+    <!-- About Section Start-->
+    <section class="about-section active" id="about">
+        <div class="container">
+            <div class="row min-vh-100">
+                <div class="about-content">
+                    <img src="images/profile.jpeg" alt="profile-img">
+                    <h1>Hi, My name is Payal Adhikary.</h1>
+                    <p>I'm a <span>fullstack developer</span>.My passion towards coding enhances my skills to develop efficient and user-friendly web and mobile applications. Check out my latest work on the <a href="#portfolio" class="link-item">portfolio page</a>. Want to talk about a project? You can get in touch with me <a href="#contact" class="link-item">here</a>.</p>
+                    <h2>skills</h2>
+                    <div class="skills">
+                        <div class="skill-item">html</div>
+                        <div class="skill-item">css</div>
+                        <div class="skill-item">javascript</div>
+                        <div class="skill-item">bootstrap</div>
+                        <div class="skill-item">c#</div>
+                        <div class="skill-item">asp.net</div>
+                        <div class="skill-item">php</div>
+                        <div class="skill-item">laravel</div>
+                        <div class="skill-item">sql</div>
+                        <div class="skill-item">angular</div>
+                        <div class="skill-item">java</div>
+                        <div class="skill-item">python</div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Home Section End -->
+        </div>
+    </section>
+    <!-- About Section End-->
 
-        <!-- About Section Start -->
-        <section class="about-section sec-padding " id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2>about me</h2>
+
+    <!-- Portfolio Section Start -->
+    <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>recent works</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-filter">
+                    <button type="button" title="Show All Works" class="portfolio-filter-btn active" data-filter="all">all</button>
+                    <button type="button" title="Filter by Front-End" class="portfolio-filter-btn" data-filter="front-end">front-end</button>
+                    <button type="button" title="Filter by Back-End" class="portfolio-filter-btn" data-filter="back-end">back-end</button>
+                    <!-- <button type="button" title="Filter by UI/UX" class="portfolio-filter-btn " data-filter="ui/ux">ui/ux</button> -->
+                </div>
+                <div class="filter-status">
+                    <p></p>
+                </div>
+            </div>
+            <div class="row portfolio-items">
+                <!-- portfolio item start -->
+                <div class="portfolio-item" data-category="back-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="img/notes-sharing-asp.png" alt="thumbnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">notes sharing app</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>A platform for everyone to gain and share the knowledge that they are pursuing or have already gathered.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span>24 Jan, 2024</span></p>
+                            <p>Technologies Used - <span>HTML,CSS,BOOTSTRAP,ASP.NET,SQL</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <!-- <p>View Online- <span><a href="https://prettify-interior.onrender.com/" target="_blank">View Project</a></span></p> -->
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="about-img">
-                        <div class="img-box">
-                            <img src="img/profile-img.png" alt="about image">
+                <!-- portfolio item end -->
+                <!-- portfolio item start -->
+                <div class="portfolio-item" data-category="front-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="img/home-decor-website.png" alt="thumbnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">home decor business website</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>A modern website for home decors to attract customers towards your home decor business and expand your business to a large audience.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span>24 Dec, 2023</span></p>
+                            <p>Technologies Used - <span>HTML,CSS,JS</span></p>
+                            <p>Role - <span>Front-End</span></p>
+                            <p>View Online- <span><a href="https://prettify-interior.onrender.com/" target="_blank">View Project</a></span></p>
                         </div>
                     </div>
-                    <div class="about-text">
-                        <p>Driven by dreams and propelled by passion to reach the peak of perfection by putting my best
-                            efforts and knowledge gained into practice. Thrust of learning something new each day keeps
-                            me
-                            in a good pace with the evolving technologies. Being punctual and having the skills to
-                            present
-                            myself in a well- understandable manner, I can be a valuable asset to your organization.</p>
-                        <h3>skills</h3>
-                        <div class="skills">
-                            <div class="skill-item"><img src="img/html.png" alt=""></div>
-                            <div class="skill-item"><img src="img/css.png" alt=""></div>
-                            <div class="skill-item"><img src="img/js.png" alt=""></div>
-                            <div class="skill-item"><img src="img/bootstrap.png" alt=""></div>
-                            <div class="skill-item"><img src="img/angular.jpeg" alt="" height="64" width="64"></div>
-                            <div class="skill-item"><img src="img/java.png" alt=""></div>
-                            <div class="skill-item"><img src="img/sql.png" alt=""></div>
-                            <div class="skill-item"><img src="img/c-sharp.png" alt=""></div>
-                            <div class="skill-item"><img src="img/asp.net.png" alt=""></div>
-                            <div class="skill-item"><img src="img/mysql.png" alt=""></div>
-                            <div class="skill-item"><img src="img/figma.png" alt=""></div>
-                            <div class="skill-item"><img src="img/python.png" alt=""></div>
-                            <div class="skill-item"><img src="img/django.png" alt=""></div>
-                            <div class="skill-item"><img src="img/wordpress.png" alt=""></div>
-                            <div class="skill-item"><img src="img/node.png" alt=""></div>
-                            <div class="skill-item"><img src="img/react.png" alt=""></div>
-                            <div class="skill-item"><img src="img/php.png" alt=""></div>
-                        </div>
+                </div>
+                <!-- portfolio item end -->
 
-                        <div class="about-tabs">
-                            <button type="button" class="tab-item active" data-target="#education">education</button>
-                            <button type="button" class="tab-item" data-target="#experience">experience</button>
+                <!-- portfolio item start -->
+                <div class="portfolio-item" data-category="front-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="img/recipe-app.png" alt="thumbnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">recipe guide app</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>A simple recipe guide book to have all the details of a particular recipe in one place built using Rapid Api.</p>
                         </div>
-
-                        <!-- Education Start -->
-                        <div class="tab-content active" id="education">
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <span class="date">2019 - 2023</span>
-                                    <h4>bachelor of technology - <span>bankura unnayani institute of engineering</span>
-                                    </h4>
-                                    <p>Successfully completed my degree in the stream of Information Technology with the
-                                        CGPA of 9.43.</p>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <span class="date">2017 - 2019</span>
-                                    <h4>higher secondary - <span>st. joseph's convent high school</span></h4>
-                                    <p>Completed my Higher Secondary with the percentage of 85.48%.</p>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <span class="date">2015 - 2017</span>
-                                    <h4>secondary - <span>st. joseph's convent high school</span></h4>
-                                    <p>Passes Secondary education with the percentage of 86%.</p>
-                                </div>
-                            </div>
+                        <div class="general-info">
+                            <p>Created - <span>26 Dec, 2023</span></p>
+                            <p>Technologies Used - <span>HTML,CSS,JS,Rapid API</span></p>
+                            <p>Role - <span>Front-End</span></p>
+                            <p>View Online- <span><a href="https://recipe-book-3ppg.onrender.com/" target="_blank">View Project</a></span></p>
                         </div>
-                        <!-- Education End -->
+                    </div>
+                </div>
+                <!-- portfolio item end -->
 
-                        <!-- Experience Start -->
-                        <div class="tab-content" id="experience">
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <span class="date">Web Developer & DevOps Intern</span>
-                                    <h4>Dreadnought</h4>
-                                    <p>Worked on live projects and served responsive websites as per client's
-                                        requirements.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="date">PHP Development Training</span>
-                                    <h4>Xperteez Technology,Kolkata</h4>
-                                    <p>Learned about PHP concepts and built an E-Commerce Website using PHP and MYSQL.
-                                    </p>
-                                </div>
-                            </div>
+                <!-- portfolio item start -->
+                <div class="portfolio-item" data-category="back-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="img/php-crud.png" alt="thumbnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Employee Management - Simple CRUD</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Basic CRUD operations for employee management.</p>
                         </div>
-                        <!-- Experience End -->
+                        <div class="general-info">
+                            <p>Created - <span>04 Dec, 2020</span></p>
+                            <p>Technologies Used - <span>HTML,CSS,JS,PHP,SQL</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <p>View Online- <span><a href="https://employee-management-php.000webhostapp.com/display.php" target="_blank">View Project</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio item end -->
 
-                        <a href="img/Payal_Adhikary_Resume.pdf" class="btn" download="Payal_Adhikary">download CV</a>
-                        <a href="#contact" class="btn link-item">contact me</a>
+                <!-- portfolio item start -->
+                <div class="portfolio-item" data-category="front-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="img/news-app.png" alt="thumbnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">News App</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>A news app to fetch your searched articles and all the relevant articles related to your search.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span>04 Dec, 2020</span></p>
+                            <p>Technologies Used - <span>HTML,CSS,JS,Rapid API</span></p>
+                            <p>Role - <span>Front-End</span></p>
+                            <p>View Online- <span><a href="https://news-app-zhsx.onrender.com/" target="_blank">View Project</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio item end -->
+
+                <!-- portfolio item start -->
+                <div class="portfolio-item" data-category="back-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="img/student-management-asp.png" alt="tumbnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">student management system - asp.net crud</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Simple CRUD operations in ASP.NET Framework regarding student management system.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span>23 Jan,2024</span></p>
+                            <p>Technologies Used - <span>Bootstrap,ASP.NET,SQL</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <!-- <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio item end -->
+
+                <!-- portfolio item start -->
+                <div class="portfolio-item" data-category="front-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="img/portfolio-design.png" alt="tumbnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">portfolio design</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Modern portfolio design with dark and light mode.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span>13 Jan,2023</span></p>
+                            <p>Technologies Used - <span>HTML,CSS,JS</span></p>
+                            <p>Role - <span>Front-End</span></p>
+                            <p>View Online- <span><a href="https://payal-adhikary.onrender.com/" target="_blank">View Project</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio item end -->
+
+               <!-- portfolio item start -->
+               <div class="portfolio-item" data-category="front-end">
+                <div class="portfolio-item-thumbnail">
+                    <img src="img/weather-app.png" alt="tumbnail">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-item-title">weather app</h3>
+                <div class="portfolio-item-details">
+                    <div class="description">
+                        <p>Weather app to fetch the weather details of a particular city.</p>
+                    </div>
+                    <div class="general-info">
+                        <p>Created - <span>9 Dec,2023</span></p>
+                        <p>Technologies Used - <span>HTML,CSS,JS,Rapid API</span></p>
+                        <p>Role - <span>Front-End</span></p>
+                        <p>View Online- <span><a href="https://weather-app-li7w.onrender.com/" target="_blank">View Project</a></span></p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- About Section End -->
+            <!-- portfolio item end -->
 
-        <!-- Portfolio Section Start -->
-        <section class="portfolio-section sec-padding " id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2>recent work</h2>
-                    </div>
+            <!-- portfolio item start -->
+            <div class="portfolio-item" data-category="front-end">
+                <div class="portfolio-item-thumbnail">
+                    <img src="img/word-count.png" alt="tumbnail">
+                    <button type="button" class="btn more-info-btn">more info</button>
                 </div>
-                <div class="row">
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/bms.png" alt="">
-                        </div>
-                        <h3 class="portfolio-item-title">Billing Management System</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>This project is based on billing management which is the most vital aspect of any
-                                    business like grocery store , malls or restaurants.
-
-                                    This Billing Management System application will help businesses to add new buyers,
-                                    update their records in future, delete the buyers if they are not a part of their
-                                    business anymore, add new products to keep track of the inventory, update the
-                                    products with respect to price and availability, delete the products that can't be
-                                    provided to the customers and finally comes with a wonderful billing system which
-                                    generates bills as pdf and finds users from the database by their name's initials or
-                                    contact number. Also, the products that are not available doesn't get displayed on
-                                    the billing screen. It calculates the total amount to be paid along with the amount
-                                    that the shop owner must return to the customer in case the customer had paid an
-                                    extra amount.
-                                    It also has the features to login, logout and close application.
-
-                                    If installed in a shop, cafe or mall, this can prove beneficial and can provide a
-                                    convenient way for the billing process.<br>
-                                     <strong>**Note: The bills are generated in E Drive of your system. **</strong>
-                                </p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>Sep 24 2023 </span></li>
-                                    <li>technologies used - <span>Java Swing Framework, MySql</span></li>
-                                    <li>ide used - <span>NetBeans IDE</span></li>
-                                    <li>watch demo - <span>Play Video <i class="fa-regular fa-hand-point-down fa-bounce" style="color: #e02f6b; font-size: 30px; margin-left: 5px;"></i></span>
-                                        <div class="video-container">
-                                            <video src="video/bms.mp4" controls></video>
-                                        </div>
-                                    </li>
-
-                                    
-
-                                    <li>download exe - <span><a href="src/Billing_Management_System_setup.exe" download="Billing_Management_System_setup">Click here</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-
+                <h3 class="portfolio-item-title">word count app</h3>
+                <div class="portfolio-item-details">
+                    <div class="description">
+                        <p>A simple app made using JavaScript to count number of words,characters, senetences and paragraphs.</p>
                     </div>
-                    <!-- Portfolio Item End -->
-
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/apple-watch-landing-page.png" alt="">
-                        </div>
-                        <h3 class="portfolio-item-title">Apple Watch Landing Page</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>This is a design of Apple Watch landing page which depicts the design and the functions that are needed for the landing page.
-                                </p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>Jan 13 2023 </span></li>
-                                    <li>technologies used - <span>Figma(UI/UX)</span></li>
-                                    <li>view online - <span><a href="https://www.behance.net/gallery/162443475/Apple-Watch-Landing-Page-Design" target="_blank">Click here</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-
+                    <div class="general-info">
+                        <p>Created - <span>9 Dec,2023</span></p>
+                        <p>Technologies Used - <span>HTML,CSS,JS</span></p>
+                        <p>Role - <span>Front-End</span></p>
+                        <p>View Online- <span><a href="https://word-count-app-ncot.onrender.com" target="_blank">View Project</a></span></p>
                     </div>
-                    <!-- Portfolio Item End -->
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/employeeHandler.png" alt="">
-                        </div>
-                        <h3 class="portfolio-item-title">Employee Management System</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>This project is based on CRUD operations of employees in an organization. It involves keeping track of employees by creating, fetching, updating and deleting employee records. It comes with the features of separate login and logout for admin and employees. Also, the content varies according to normal employee and admin. A feedback mechanism for employees has been implemented to receive queries from employees.
-                                </p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>Jan 13 2023 </span></li>
-                                    <li>technologies used - <span>C#, Asp.Net, Angular JS</span></li>
-                                    <li>source code - <span><a href="https://github.com/payal105/EmployeeHandler" target="_blank">Click here</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Portfolio Item End -->
-
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/chatroomInNodeJS.png" alt="">
-                        </div>
-                        <h3 class="portfolio-item-title">Chatroom App</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>This realtime chat app serves the purpose of having a one-time chat with your friend. You can have a group chat as well and you can also view who's joining or leaving the chat.
-                                </p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>Jan 15 2023 </span></li>
-                                    <li>technologies used - <span>Node JS, Socket .io, Express</span></li>
-                                    <li>view online - <span><a href="https://mychatroom.onrender.com" target="_blank">Click here</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Portfolio Item End -->
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/portfolio-design.png" alt="">
-                        </div>
-                        <h3 class="portfolio-item-title">Portfolio Website Design</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>Every web developer starts his/her journey by creating an interactive and responsive portfolio website and hosting it to make it live for others to know what are the skills and qualifications one possess. It helps a beginner to gain more attention of recruiters. This is a modern design of a portfolio website and also my first portfolio website.
-                                </p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>Jan 13 2022 </span></li>
-                                    <li>technologies used - <span>HTML,CSS,JS</span></li>
-                                    <li>IDE used - <span>VS Code</span></li>
-                                    <li>view online - <span><a href="https://payal-adhikary.onrender.com/" target="_blank">Click here</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Portfolio Item End -->
-
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/disneyHoststar.png" alt="">
-                        </div>
-                        <h3 class="portfolio-item-title">Disney+ Clone</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>Clone projects help you to have a strong grip over Web Development. Cloning means you see a website and try to built it i exactly the same manner just by looking at the design and using your knowledge of web development. This clone project is based on Disney+ Website which I created in the bootcamp organised by Devtown.
-                                </p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>July 04 2022 </span></li>
-                                    <li>technologies used - <span>HTML,CSS,JS</span></li>
-                                    <li>IDE used - <span>VS Code</span></li>
-                                    <li>view online - <span><a href="https://payal-adhikary.onrender.com/" target="_blank">Click here</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Portfolio Item End -->
                 </div>
             </div>
-        </section>
-        <!-- Portfolio Section End -->
+            <!-- portfolio item end -->
 
-        <!-- Contact Section Start -->
-        <section class="contact-section sec-padding " id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2>contact me</h2>
+            <!-- portfolio item start -->
+            <div class="portfolio-item" data-category="front-end">
+                <div class="portfolio-item-thumbnail">
+                    <img src="img/disneyHoststar.png" alt="tumbnail">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-item-title">disney+ clone</h3>
+                <div class="portfolio-item-details">
+                    <div class="description">
+                        <p>Clone project of Disney+</p>
+                    </div>
+                    <div class="general-info">
+                        <p>Created - <span>136 Feb,2023</span></p>
+                        <p>Technologies Used - <span>HTML,CSS,JS</span></p>
+                        <p>Role - <span>Front-End</span></p>
+                        <p>View Online- <span><a href="https://disneyclone.onrender.com/" target="_blank">View Project</a></span></p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="contact-form">
-                        <form action="" id="contact-form">
+            </div>
+            <!-- portfolio item end -->
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+<!-- Contact Section Start -->
+<section class="contact-section sec-padding min-vh-100 " id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>contact me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>Want to get in touch with me? Feel free to drop a mail to the below mail id or send a message with your queries or suggesstions. I will be in touch with you as soon as possible. Would always like to colaborate with evolving ideas and concepts.</p>
+                </div>
+                <div class="contact-info-item">
+                    <p>Email me on : <span>payaladhikary.portfolio@gmail.com</span></p>
+                </div>
+                <div class="contact-info-item">
+                    <p class="social-links">
+                        <span>Find me on</span>
+                        
+                        <a href="https://www.linkedin.com/in/payal-adhikary-55bbb1223/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/payal.adhikary.758" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/payal_adhikary" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/payal_adhikary_dyna/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </p>
+                </div>
+                <button type="button" class="btn toggle-contact-form-btn">Send Message</button>
+            </div>
+            <!-- Contact Form Start -->
+            <div class="contact-form" >
+                <div class="contact-form-inner">
+                    <div class="contact-form-container">
+                        <button type="button" class="close-btn toggle-contact-form-btn"></button>
+                        <form id="contact-form" action="">
                             <div class="row">
                                 <div class="input-group">
-                                    <input type="text" placeholder="Name" class="input-control"  name="name" id="contact-name">
+                                    <input type="text" placeholder="Your Name" class="input-control" id="contact-name" name="name">
                                 </div>
                                 <div class="input-group">
-                                    <input type="email" placeholder="Email" class="input-control"  name="email" id="contact-email">
+                                    <input type="text" placeholder="Your Email" class="input-control" id="contact-email" name="email">
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Subject" class="input-control"  name="subject" id="contact-subject">
+                                    <input type="text" placeholder="Subject" class="input-control" id="contact-subject" name="subject">
                                 </div>
                                 <div class="input-group">
-                                    <textarea name="desc" placeholder="Message" class="input-control" id="contact-desc"></textarea>
+                                   <textarea placeholder="Message" class="input-control" id="contact-message" name="message"></textarea>
                                 </div>
                                 <div class="input-group">
-                                    <p id="contact-message"></p>
+                                   <button type="submit" class="btn btn-submit">send</button>
                                 </div>
-                                <div class="submit-btn">
-                                    <button type="submit" class="btn">send message</button>
-                                </div>
+                                
+                                <h2 id="contact-success"></h2>
                             </div>
                         </form>
                     </div>
-                    <div class="contact-info">
-                        <div class="contact-info-item">
-                            <h3>Email</h3>
-                            <p>payaladhikary2000@gmail.com</p>
-                        </div>
-                        <div class="contact-info-item">
-                            <h3>Phone</h3>
-                            <p>+91 7091630692</p>
-                        </div>
-                        <div class="contact-info-item">
-                            <h3>Follow me</h3>
-                           <div class="social-links">
-                            <a href="https://www.linkedin.com/in/payal-adhikary-55bbb1223/" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/payal105" target="_blank" ><i class="fab fa-github"></i></a>
-                            <a href="https://whatsapp.com/channel/0029Va6NuESHltXzzKf5q83j" target="_blank" ><i class="fab fa-whatsapp"></i></a>
-                            <a href="https://www.behance.net/payaladhikary" target="_blank" ><i class="fab fa-behance"></i></a>
-                            <a href="https://www.facebook.com/payal.adhikary.758" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/payal_adhikary" target="_blank" ><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="https://www.instagram.com/payal_adhikary_dyna/" target="_blank" ><i class="fab fa-instagram"></i></a>
-                            <a href="https://medium.com/@payaladhikary2000" target="_blank" ><i class="fab fa-medium"></i></a>
-                           </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
-        <!-- Contact Section End -->
+            <!-- Contact Form End -->
+        </div>
     </div>
-    <!-- Main End-->
+</section>
+<!-- Contact Section End -->
 
     <!-- Portfolio Item Details Popup Start -->
     <div class="portfolio-popup">
+        <div class="pp-overlay"></div>
         <div class="pp-inner">
             <div class="pp-content">
                 <div class="pp-header">
-                    <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+                    <h2 class="pp-counter">
+                    
+                    </h2>
+                    <button type="button" title="close" class="close-btn pp-close-btn"></button>
                     <div class="pp-thumbnail">
-                        <img src="img/apple-watch-landing-page.png" alt="">
+                        <img src="img/apple-watch-landing-page.png" alt="pp-thumbnail">
                     </div>
                     <h3></h3>
                 </div>
                 <div class="pp-body">
+                    
+                </div>
+                <div class="pp-footer">
+                    <div class="pp-footer-left hidden">
+                        <button type="button" title="Prev Work" class="btn pp-prev-btn">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <h3></h3>
+                        <img src="img/disneyHoststar.png" alt="prev work thumbnail">
+                    </div>
+                    <div class="pp-footer-right hidden">
+                        <button type="button" title="Next Work" class="btn pp-next-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <h3></h3>
+                        <img src="img/employeeHandler.png" alt="next work thumbnail">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Portfolio Item Details Popup End -->
-
-    <!-- Email JS -->
     <script  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/1d5b66556a.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
